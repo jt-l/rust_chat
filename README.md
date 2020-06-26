@@ -8,7 +8,7 @@ Multithreaded chat server implemented in rust.
 ## INSTALL
 
 ```
-git clone https://github.com/jtl/rust_chat.git
+git clone https://github.com/jt-l/rust_chat.git
 ```
 
 ## RUN
@@ -45,6 +45,6 @@ is aquired the client thread will query, delete, or update the shared data store
 Here is a list of potential improvements that could be made to the code to increase quality. 
 
 1. Unit tests
-2. Code refactoring -- split logic into more functions/more code reuse/handle errors better (e.g. clean up use of unwrap() calls)/more idiomatic rust code style
+2. Code refactoring -- split logic into more functions/more code reuse/handle errors better (e.g. clean up use of unwrap() calls)/more idiomatic rust code style/clean up comments
 3. Performance testing -- write a script to generate load on the system; record # of concurrent users, response time, cpu utilization, and memory utilization. This information
 can be used to find bottlenecks and then the code can be optimized accordingly.
