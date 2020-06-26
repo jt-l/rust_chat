@@ -38,7 +38,7 @@ The main thread handles incoming connections and spawns a child thread for each 
 There is one shared data structure which is a hashmap that maps chatroom names to lists of client connections (TCP streams). This data structure is protected by a mutex and is using rust's ARC data type (ARC = Automatically referenced counted) -- a thread safe reference counting pointer. 
 
 When a client types a message, joins, or disconnects from a chat room the thread for which that client is running in attempts to aquire the mutex. Once the mutex
-is aquired the client thread will query, delete, or update the shared data store and write to each other client the desired message which corresponds to the action the client is taking (i.e. leaving chat, sending a message etc). 
+is aquired the client thread will query, delete, or update the shared data store and write to each other client the desired message which corresponds to the action the client is taking (i.e. leaving chat, sending a message, etc). 
 
 ## IMPROVEMENTS
 
